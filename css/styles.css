@@ -12894,8 +12894,8 @@ footer a:focus {
 
 .masthead {
   background-color: #f8f9fa;
-  padding-top: 9.5rem;
-  padding-bottom: 5rem;
+  padding-top: 29.5rem;
+  padding-bottom: 25rem;
 }
 
 .masthead .masthead-device-mockup {
@@ -12994,7 +12994,7 @@ footer a:focus {
   }
 }
 
-.light-text-email-form {
+#email-form {
   color: #fff;
   opacity: 0.8;
   font-weight: 300;
