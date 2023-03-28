@@ -30,12 +30,12 @@
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-3">
+        <div class="container px-4">
             <a class="navbar-brand fw-bold mx-0" href="#page-top"><img src="assets/img/metroalert-lq-transp.png"
                     style='height: 2.5em;' /> </a>
-            <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" type="button" href="#email-sign-up">
+            <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" type="button" href="#email-form">
                 <span class="d-flex align-items-center">
-                    <span class="small">Zapisz się</span>
+                    <span class="small">Dołącz!</span>
                 </span>
             </a>
         </div>
@@ -83,7 +83,7 @@
                 <div class="col-lg-6">
                     <!-- Mashead text and app badges-->
                     <div class="py-8 pb-lg-0 text-center text-lg-start">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                        <div id="carouselExampleIndicators" class="carousel-dark slide" data-ride="carousel"
                             data-interval="3000">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -92,19 +92,19 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <h3 class="display-4 lh-1 mb-3">Awaria metra już Cię nie zaskoczy!</h1>
-                                        <p class="lead fw-normal text-muted my-5">Planuj przejazdy komunikacją miejską z
-                                            aktualnymi informacjami o awariach od reszty użytkowników.</p>
+                                    <h3 class="display-4 lh-1 mb-3">Awaria metra już Cię nie zaskoczy!</h3>
+                                    <p class="lead fw-normal text-muted my-5">Planuj przejazdy komunikacją miejską z
+                                        aktualnymi informacjami o awariach od reszty użytkowników.</p>
                                 </div>
                                 <div class="carousel-item">
-                                    <h3 class="display-4 lh-1 mb-3">Unikaj stresujących poranków.</h1>
-                                        <p class="lead fw-normal text-muted my-5">Informacje o utrudnieniach na trasie
-                                            dostaniesz przed wyjściem z domu.</p>
+                                    <h3 class="display-4 lh-1 mb-3">Unikaj stresujących poranków.</h3>
+                                    <p class="lead fw-normal text-muted my-5">Informacje o utrudnieniach na trasie
+                                        dostaniesz przed wyjściem z domu.</p>
                                 </div>
                                 <div class="carousel-item">
-                                    <h3 class="display-4 lh-1 mb-3">Zostań częścią społeczności.</h1>
-                                        <p class="lead fw-normal text-muted my-5"> Dziel się informacjami z pierwszej
-                                            ręki i bądź na bieżąco z sytuacją na mieście.</p>
+                                    <h3 class="display-4 lh-1 mb-3">Zostań częścią społeczności.</h3>
+                                    <p class="lead fw-normal text-muted my-5"> Dziel się informacjami z pierwszej
+                                        ręki i bądź na bieżąco z sytuacją na mieście.</p>
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
@@ -123,10 +123,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row gx-5 align-items-center">
-                <div class="col">
+            <div class="row align-items-center">
+                <div class="col-2">
                     <a class="pt-8 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg"
                             alt="..." /></a>
+                </div>
+                <div class="col-2">
                     <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
                 </div>
             </div>
@@ -137,32 +139,37 @@
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-8">
-                    <div class="container px-5 my-5">
-                        <div>
+                    <div class="container px-sm-3 my-0">
+                        <div class="row align-items-center">
+                            <h3 id="email-form" class="display-10 lh-1 mb-3">
+                                Zapisz swój email, a po premierze aplikacji,
+                                otrzymasz
+                                dostęp do
+                                wersji bez reklam za darmo!</h3>
+                        </div>
+                        <div class="row align-items-center">
                             <form id="contactForm" data-sb-form-api-token="5dc441de-5921-45da-bc1c-91c7141f4ae7">
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="emailAddress" type="email"
-                                        placeholder="Email Address" data-sb-validations="required,email" />
-                                    <label for="emailAddress">Email Address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address
-                                        is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address
-                                        Email is not valid.</div>
+                                    <input class="form-control" id="emailAddress" type="email" placeholder="Adres email"
+                                        data-sb-validations="required,email" />
+                                    <label for="emailAddress">Adres email</label>
+                                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Adres email
+                                        jest wymagany.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Format podanego
+                                        adresu email nie jest poprawny.</div>
                                 </div>
                                 <div class="d-none" id="submitSuccessMessage">
                                     <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        <p>To activate this form, sign up at</p>
-                                        <a
-                                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                        <div class="fw-bolder">Adres email zapisany poprawnie!</div>
                                     </div>
                                 </div>
                                 <div class="d-none" id="submitErrorMessage">
-                                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                                    <div class="text-center text-danger mb-3">Nieoczekiwany problem z zapisem adresu
+                                        email.</div>
                                 </div>
                                 <div class="d-grid">
                                     <button class="btn btn-primary btn-lg disabled" id="submitButton"
-                                        type="submit">Submit</button>
+                                        type="submit">Wyślij</button>
                                 </div>
                             </form>
                         </div>
