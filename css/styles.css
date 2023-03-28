@@ -12994,7 +12994,7 @@ footer a:focus {
   }
 }
 
-#email-form {
+.light-text-email-form {
   color: #fff;
   opacity: 0.8;
   font-weight: 300;
