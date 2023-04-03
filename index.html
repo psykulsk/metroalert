@@ -143,10 +143,8 @@
                     <div class="container px-sm-3 my-0">
                         <div class="row align-items-center">
                             <h3 id="email-form" class="display-10 lh-1 mb-3 light-text-email-form">
-                                Zapisz swój email, a po premierze aplikacji,
-                                otrzymasz
-                                dostęp do
-                                wersji bez reklam za darmo!</h3>
+                                Wpisz się na listę oczekujących!
+                            </h3>
                         </div>
                         <div class="row align-items-center">
                             <form id="contactForm" data-sb-form-api-token="5dc441de-5921-45da-bc1c-91c7141f4ae7">
@@ -181,6 +179,73 @@
         </div>
     </aside>
     <!-- Cookies usage modal-->
+    <div class="cookies-modal modal fade" tabindex="-1" role="dialog" aria-labelledby="cookies_modal"
+        id="cookies_modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title">Nastavitve za uporabo piškotkov</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Piškotki, ki jih namestimo v vašem brskalniku, anonimno zbirajo določene informacije o vašem
+                        obisku spletnega mesta. Omogočajo nam, da lahko zagotovimo delovanje vseh funkcij spletnega
+                        mesta, določene vsebine prilagodimo posebej za vas in z analizo obiska spletno mesto stalno
+                        izboljšujemo.</p>
+                    <form>
+                        <fieldset>
+                            <div class="margin-medium-top">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" checked disabled> Nujni piškotki</label>
+                                    <p class="margin-small-top">Zahtevani piškotki omogočajo osnovne funkcije, kot so
+                                        navigacija po spletišču in dostop do posebnih delov spletišča. Spletna stran
+                                        brez teh piškotkov uporabniku ne zagotavlja polnega delovanja. Sem uvrščamo tudi
+                                        piškotke, namenjene prilagoditvi obnašanja ali izgleda spletnega mesta ob
+                                        naslednjih obiskih, na primer za prikaz v izbranem jeziku.</p>
+                                </div>
+                            </div>
+                            <div class="margin-medium-top">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Piškotki za spremljanje statistike</label>
+                                    <p class="margin-small-top">Piškotki za statistiko anonimno zbirajo in javljajo
+                                        informacije lastnikom spletnih mest. S tem jim pomagajo razumeti, kako
+                                        obiskovalci uporabljajo spletno stran, in na podlagi teh informacij izboljšati
+                                        uporabniško izkušnjo.</p>
+                                </div>
+                            </div>
+                            <div class="margin-medium-top">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Piškotki za oglaševanje in profiliranje
+                                        uporabnikov</label>
+                                    <p class="margin-small-top">Piškotki za trženje anonimno zbirajo podatke o vaših
+                                        obiskih spletnih strani. Uporabljajo jih oglaševalci, da vam prikazujejo oglase,
+                                        ki so ustreznejši in zanimivejši za vas. Uporabljajo se tudi za preprečevanje
+                                        prikazovanja oglasov, ki jih je uporabnik že videl.</p>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Shrani</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="collapse in" id="cookies-container">
+        <div class="cookies-row">
+
+            <div class="text-center">
+                S tem, ko uporabljate spletno mesto, dovoljujete uporabo piškotkov v skladu z našo <a href="#">politiko
+                    varovanja zasebnosti</a>
+                <a data-toggle="modal" href="#cookies_modal" id="cookie_settings"
+                    class="btn btn-primary btn-sm">Nastavitve</a>
+                <button type="button" class="close" id="close-cookies-modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
